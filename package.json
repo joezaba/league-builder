@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "dev" : "mvn clean & vue-cli-service build --dev & mvn spring-boot:run",
     "serve": "mvn spring-boot:run",
     "serve:vue": "vue-cli-service serve",
     "build": "vue-cli-service build --watch",

@@ -3,19 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev" : "mvn clean & vue-cli-service build --dev & mvn spring-boot:run",
-    "serve": "mvn spring-boot:run",
+    "serve:sb": "mvn clean & mvn spring-boot:run",
+    "build:vue": "vue-cli-service build --watch",
     "serve:vue": "vue-cli-service serve",
-    "build": "vue-cli-service build --watch",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "axios": "^0.21.0",
+    "ckeditor4-vue": "^1.2.0",
     "core-js": "^3.6.5",
     "jquery": "^3.5.1",
     "material-design-icons": "^3.0.1",
     "materialize-css": "^1.0.0-rc.2",
     "vue": "^2.6.11",
+    "vue-fragment": "^1.5.1",
     "vuex": "^3.6.0"
   },
   "devDependencies": {

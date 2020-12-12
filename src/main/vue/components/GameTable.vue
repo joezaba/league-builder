@@ -1,6 +1,6 @@
 <template>
   <div>
-<div class="row">
+    <div class="row">
       <div class="input-field col l6 m9 s12">
         <select>
           <option value selected>All Teams</option>
@@ -28,66 +28,51 @@
       </thead>
 
       <tbody>
-        <tr>
-          <td colspan="7" style="padding: 5px"><strong>Week 1</strong></td>
-        </tr>
-        <tr>
-          <td>Sat 9/12</td>
-          <td>8:30 AM</td>
-          <td>T6: SS - Trueman</td>
-          <td><strong>21</strong> </td>
-          <td>T3: FH - Blake</td>
-          <td><strong>13</strong> </td>
-          <td>Lone Tree- Ct 2</td>
-        </tr>
-        <tr>
-          <td>Sat 9/12</td>
-          <td>9:45 AM</td>
-          <td>T6: SS - Trueman</td>
-          <td></td>
-          <td>T4: AP- Rodriguez</td>
-          <td></td>
-          <td>Lone Tree- Ct 2</td>
-        </tr>
-        <tr>
-          <td>Sat 9/12</td>
-          <td>10:15 AM</td>
-          <td>T6: SS - Trueman</td>
-          <td></td>
-          <td>T8: SS - Abplanalp</td>
-          <td></td>
-          <td>Lone Tree- Ct 2</td>
-        </tr>
-        <tr>
-          <td colspan="7" style="padding: 5px"><strong>Week 12</strong></td>
-        </tr>
-        <tr>
-          <td>Sat 9/12</td>
-          <td>10:15 AM</td>
-          <td>T6: SS - Trueman</td>
-          <td></td>
-          <td>T8: SS - Abplanalp</td>
-          <td></td>
-          <td>Lone Tree- Ct 2</td>
-        </tr>
-        <tr>
-          <td>Sat 9/12</td>
-          <td>10:15 AM</td>
-          <td>T6: SS - Trueman</td>
-          <td></td>
-          <td>T8: SS - Abplanalp</td>
-          <td></td>
-          <td>Lone Tree- Ct 2</td>
-        </tr>
+        
+        <GameItem
+          date="Sat 9/12"
+          time="8:30 AM"
+          homeTeam="T6: SS - Trueman"
+          awayTeam="T3: FH - Blake"
+          location="Lone Tree- Ct 2"
+          week="1"
+        />
+        <GameItem
+          date="Sat 9/12"
+          time="9:45 AM"
+          homeTeam="T6: SS - Trueman"
+          awayTeam="T4: AP- Rodriguez"
+          location="Lone Tree- Ct 2"
+        />
+        
+        <GameItem
+          date="Sat 9/12"
+          time="10:15 AM"
+          homeTeam="T3: FH - Blake"
+          awayTeam="T4: AP- Rodriguez"
+          location="Lone Tree- Ct 2"
+          week="2"
+        />
+        
+        <GameItem
+          date="Sat 9/12"
+          time="11:45 AM"
+          homeTeam="T3: FH - Blake"
+          awayTeam="T4: AP- Rodriguez"
+          location="Lone Tree- Ct 2"
+        />
       </tbody>
     </table>
   </div>
 </template>
 
 <script>
+import GameItem from "./GameItem.vue";
 export default {
   name: "GameTable",
-  components: {},
+  components: {
+    GameItem
+  },
   methods: {},
   created() {},
   mounted() {},
